@@ -596,8 +596,8 @@ def get_hero_header_html(lang: str = "zh") -> str:
         seal = "乾"
     else:
         title = "堅&nbsp;太&nbsp;乙"
-        subtitle = "太&nbsp;乙&nbsp;神&nbsp;數&nbsp;排&nbsp;盤"
-        tagline = "推天地之變，演萬事之幾"
+        subtitle = "태&nbsp;을&nbsp;신&nbsp;수&nbsp;포&nbsp;국"
+        tagline = "천지의 변화를 추산하고 만사의 기미를 펼친다"
         seal = "乾"
 
     return f"""

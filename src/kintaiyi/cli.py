@@ -17,7 +17,7 @@ from . import __version__
 
 app = typer.Typer(
     name="kintaiyi",
-    help="太乙神數排盤工具 - Taiyi Shenshu Divination Calculator",
+    help="태을신수(太乙神數) 포국 도구 - Taiyi Shenshu Divination Calculator",
     add_completion=False,
 )
 
@@ -62,7 +62,7 @@ def _parse_date_time(
         try:
             d = datetime.strptime(date_str, "%Y-%m-%d")
         except ValueError:
-            raise typer.BadParameter(f"Invalid date format: '{date_str}'. Expected YYYY-MM-DD.") from None
+            raise typer.BadParameter(f"잘못된 날짜 형식: '{date_str}'. YYYY-MM-DD 형식이어야 합니다.") from None
         year = d.year
         month = d.month
         day = d.day
@@ -71,7 +71,7 @@ def _parse_date_time(
         try:
             t = datetime.strptime(time_str, "%H:%M")
         except ValueError:
-            raise typer.BadParameter(f"Invalid time format: '{time_str}'. Expected HH:MM.") from None
+            raise typer.BadParameter(f"잘못된 시간 형식: '{time_str}'. HH:MM 형식이어야 합니다.") from None
         hour = t.hour
         minute = t.minute
 
@@ -100,7 +100,7 @@ def _format_json(result: dict) -> str:
 
 def _format_markdown(result: dict) -> str:
     """Format a result dict as Markdown table."""
-    lines: list[str] = ["| 項目 | 內容 |", "| --- | --- |"]
+    lines: list[str] = ["| 항목 | 내용 |", "| --- | --- |"]
     for key, value in result.items():
         lines.append(f"| {key} | {value} |")
     return "\n".join(lines)
@@ -115,19 +115,19 @@ _FORMATTERS = {
 
 @app.command()
 def calculate(
-    year: int | None = typer.Option(None, "--year", "-y", help="Year (公元年)"),
-    month: int | None = typer.Option(None, "--month", "-m", help="Month (月)"),
-    day: int | None = typer.Option(None, "--day", "-d", help="Day (日)"),
-    hour: int | None = typer.Option(None, "--hour", "-H", help="Hour (時, 0-23)"),
-    minute: int | None = typer.Option(None, "--minute", "-M", help="Minute (分, 0-59)"),
-    date: str | None = typer.Option(None, "--date", help="Date in YYYY-MM-DD format"),
-    time: str | None = typer.Option(None, "--time", help="Time in HH:MM format"),
-    mode: Mode = typer.Option(Mode.year, "--mode", help="Calculation mode (year/month/day/hour/minute/life)"),
-    output: OutputFormat = typer.Option(OutputFormat.text, "--output", "-o", help="Output format (text/json/markdown)"),
-    method: int = typer.Option(0, "--method", help="Taiyi method: 0=統宗, 1=金鏡, 2=淘金歌, 3=太乙局"),
-    sex: str | None = typer.Option(None, "--sex", "-s", help="Sex for life mode: male(男) or female(女)"),
+    year: int | None = typer.Option(None, "--year", "-y", help="연도(公元年)"),
+    month: int | None = typer.Option(None, "--month", "-m", help="월(月)"),
+    day: int | None = typer.Option(None, "--day", "-d", help="일(日)"),
+    hour: int | None = typer.Option(None, "--hour", "-H", help="시(時, 0-23)"),
+    minute: int | None = typer.Option(None, "--minute", "-M", help="분(分, 0-59)"),
+    date: str | None = typer.Option(None, "--date", help="날짜 (YYYY-MM-DD 형식)"),
+    time: str | None = typer.Option(None, "--time", help="시간 (HH:MM 형식)"),
+    mode: Mode = typer.Option(Mode.year, "--mode", help="계산 모드 (year/month/day/hour/minute/life)"),
+    output: OutputFormat = typer.Option(OutputFormat.text, "--output", "-o", help="출력 형식 (text/json/markdown)"),
+    method: int = typer.Option(0, "--method", help="태을 방법: 0=통종(統宗), 1=금경(金鏡), 2=도금가(淘金歌), 3=태을국(太乙局)"),
+    sex: str | None = typer.Option(None, "--sex", "-s", help="명법 모드 성별: male(남) 또는 female(여)"),
 ) -> None:
-    """Calculate a Taiyi Shenshu (太乙神數) divination board."""
+    """태을신수(太乙神數) 포국을 계산합니다."""
     from .kintaiyi import Taiyi
 
     y, m, d, h, mi = _parse_date_time(date, time, year, month, day, hour, minute)
@@ -138,7 +138,7 @@ def calculate(
         sex_map = {"male": "男", "female": "女"}
         sex_val = sex_map.get(sex, sex) if sex else None
         if sex_val not in ("男", "女"):
-            raise typer.BadParameter("Life mode requires --sex (male/男 or female/女).")
+            raise typer.BadParameter("명법(life) 모드에는 --sex (male/남 또는 female/여)가 필요합니다.")
         result = taiyi.taiyi_life(sex_val)
     else:
         ji_style = _MODE_TO_JI_STYLE[mode.value]
@@ -150,7 +150,7 @@ def calculate(
 
 @app.command()
 def version() -> None:
-    """Show the kintaiyi version."""
+    """kintaiyi 버전을 표시합니다."""
     typer.echo(f"kintaiyi {__version__}")
 
 

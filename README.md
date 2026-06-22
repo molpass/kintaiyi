@@ -12,8 +12,6 @@
 [![CI](https://github.com/kentang2017/kintaiyi/actions/workflows/ci.yml/badge.svg)](https://github.com/kentang2017/kintaiyi/actions/workflows/ci.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![GitHub stars](https://img.shields.io/github/stars/kentang2017/kintaiyi?style=social)](https://github.com/kentang2017/kintaiyi)
-[![Telegram](https://img.shields.io/badge/Telegram-Channel-blue?logo=telegram)](https://t.me/numerology_coding)
-[![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg?logo=paypal&style=flat-square)](https://www.paypal.me/kinyeah)
 
 <br/>
 
@@ -40,9 +38,7 @@
 - [📦 설치 Installation](#-설치-installation)
 - [🔧 고급 사용법 Advanced Usage](#-고급-사용법-advanced-usage)
 - [🤝 기여 안내 Contributing](#-기여-안내-contributing)
-- [💬 연락 및 커뮤니티 Contact & Community](#-연락-및-커뮤니티-contact--community)
 - [📄 License](#-license)
-- [🔗 관련 프로젝트 Related Projects](#-관련-프로젝트-related-projects)
 
 ---
 
@@ -334,50 +330,12 @@ ruff format src/
 
 ---
 
-## 💬 연락 및 커뮤니티 Contact & Community
+## 🐛 이슈 Issues
 
-| 채널 Channel | 링크 Link |
-|-------------|----------|
-| 📢 Telegram 채널 Channel | [numerology_coding](https://t.me/numerology_coding) |
-| 💬 Telegram 개인 메시지 DM | [haizhonggum](https://t.me/haizhonggum) |
-| 🐛 GitHub Issues | [문제 제출 Submit an Issue](https://github.com/kentang2017/kintaiyi/issues) |
-| 💰 PayPal 후원 Donate | [paypal.me/kinyeah](https://www.paypal.me/kinyeah) |
-
-### 위챗 공식 계정 WeChat Official Account
-
-<div align="center">
-
-![微信公眾號](https://raw.githubusercontent.com/kentang2017/kinliuren/refs/heads/master/pic/%E5%9C%96%E7%89%87_20260316084147.jpg)
-
-</div>
-
----
-
-<div align="center">
-
-### ⭐ 이 프로젝트가 마음에 드시나요? Star로 응원해 주세요!
-
-### *Enjoying Kintaiyi? Give us a ⭐ on GitHub!*
-
-[![Star this repo](https://img.shields.io/github/stars/kentang2017/kintaiyi?style=social)](https://github.com/kentang2017/kintaiyi)
-
-</div>
+[GitHub Issues](https://github.com/kentang2017/kintaiyi/issues)
 
 ---
 
 ## 📄 License
 
-본 프로젝트는 [MIT License](LICENSE) 오픈소스 라이선스를 따릅니다.
-
-This project is licensed under the [MIT License](LICENSE).
-
----
-
-## 🔗 관련 프로젝트 Related Projects
-
-| 프로젝트 Project | 설명 Description | 링크 Link |
-|-------------|-----------------|----------|
-| 🔮 **堅奇門 kinqimen** | Python 기문둔갑 포국 — Qi Men Dun Jia | [GitHub](https://github.com/kentang2017/kinqimen) |
-| 🎴 **堅六壬 kinliuren** | Python 대육임 포국 — Da Liu Ren | [GitHub](https://github.com/kentang2017/kinliuren) |
-
-> 삼식 완비, 고법 전승 — *The Three Styles of Chinese divination, all open-sourced.*
+[MIT License](LICENSE)

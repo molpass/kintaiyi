@@ -97,166 +97,166 @@ def render_changelog_html(md_text: str) -> str:
 # --- i18n: Translation dictionaries ---
 TRANSLATIONS = {
     "zh": {
-        "page_title": "堅太乙 - 太乙排盤",
-        "lang_label": "語言 Language",
-        "param_header": "排盤參數設置",
-        "year": "年",
-        "month": "月",
-        "day": "日",
-        "hour": "時",
-        "minute": "分",
-        "chart_method": "起盤方式",
-        "acc_years": "太乙積年數",
-        "ten_essences": "太乙十精",
-        "life_gender": "太乙命法性別",
-        "rotation_label": "轉盤",
-        "instant_btn": "即時盤",
-        "ai_settings": "AI設置",
-        "ai_provider": "AI 服務商",
-        "ai_model": "AI 模型",
-        "custom_provider_section": "自定義服務商設置",
-        "custom_provider_name": "名稱",
-        "custom_provider_api_mode": "API 模式",
-        "custom_provider_api_mode_option": "OpenAI API 兼容",
-        "custom_provider_api_key": "API 密鑰",
-        "custom_provider_show_key": "顯示密鑰",
-        "custom_provider_check_btn": "檢查",
-        "custom_provider_api_host": "API 主機",
-        "custom_provider_api_path": "API 路徑",
-        "custom_provider_network_compat": "改善網絡兼容性",
-        "custom_provider_models_label": "模型",
-        "custom_provider_add_model": "+ 新增",
-        "custom_provider_reset_models": "↺ 重置",
-        "custom_provider_fetch_models": "⟳ 獲取",
-        "custom_provider_no_models": "沒有可用模型",
-        "custom_provider_new_model_placeholder": "輸入模型名稱",
-        "custom_provider_key_ok": "✅ 密鑰有效",
-        "custom_provider_key_fail": "❌ 密鑰無效：{}",
-        "custom_provider_fetch_ok": "✅ 已獲取 {} 個模型",
-        "custom_provider_fetch_fail": "❌ 獲取失敗：{}",
-        "custom_provider_api_key_missing": "請輸入自定義服務商 API 密鑰。",
-        "custom_provider_host_missing": "請輸入 API 主機。",
-        "ai_custom_quota_exceeded": "⚠️ 自定義服務商 API 配額已用盡或速率受限，請稍後再試。",
-        "openai_api_key_label": "OpenAI API 密鑰",
-        "openai_api_key_placeholder": "輸入你的 OpenAI API 密鑰（sk-...）",
-        "openai_api_key_missing": "請輸入 OpenAI API 密鑰。",
-        "xai_api_key_label": "xAI API 密鑰",
-        "xai_api_key_placeholder": "輸入你的 xAI API 密鑰（xai-...）",
-        "xai_api_key_missing": "請輸入 xAI API 密鑰。",
-        "deepseek_api_key_label": "DeepSeek API 密鑰",
-        "deepseek_api_key_placeholder": "輸入你的 DeepSeek API 密鑰（sk-...）",
-        "deepseek_api_key_missing": "請輸入 DeepSeek API 密鑰。",
-        "qwen_api_key_label": "Qwen API 密鑰",
-        "qwen_api_key_placeholder": "輸入你的通義千問 API 密鑰",
-        "qwen_api_key_missing": "請輸入 Qwen API 密鑰。",
-        "select_prompt": "選擇系統提示",
-        "select_prompt_help": "選擇用於AI模型的系統提示，指導其分析太乙排盤結果",
-        "edit_prompt": "編輯系統提示",
-        "edit_prompt_placeholder": "範例：你是一位太乙神數專家，根據排盤數據提供詳細分析...",
-        "update_prompt": "💾 更新提示",
-        "delete_prompt": "❌ 刪除提示",
-        "add_prompt_expander": "➕ 新增提示",
-        "add_prompt_btn": "➕ 新增提示",
-        "new_prompt_name": "新提示名稱",
-        "new_prompt_content": "新提示內容",
-        "new_prompt_placeholder": "輸入AI分析指令...",
-        "prompt_exists": "提示名稱 '{}' 已存在。",
-        "prompt_updated": "✅ 已更新系統提示 '{}'！",
-        "prompt_deleted": "✅ 已刪除系統提示 '{}'！",
-        "prompt_added": "✅ 已新增系統提示 '{}'！",
-        "advanced_settings": "🔧 高級設置",
-        "max_tokens": "最大生成 Tokens",
-        "max_tokens_help": "控制AI回應的最大長度",
-        "temperature": "溫度 (專注 vs. 創意)",
-        "temperature_help": "較低值 (如 0.2) 更確定性；較高值 (如 0.8) 更隨機",
-        "debug_mode": "🔍 除錯模式",
-        "debug_help": "顯示除錯資訊，如 session state",
-        "debug_info": "🐛 除錯資訊",
-        # Tabs
-        "tab_chart": "🧮太乙排盤",
-        "tab_instructions": "💬使用說明",
-        "tab_history": "📜局數史例",
-        "tab_disaster": "🔥災異統計",
-        "tab_books": "📚古籍書目",
-        "tab_updates": "🆕更新日誌",
-        "tab_guide": "🚀看盤要領",
-        "tab_links": "🔗連結",
+        "page_title": "堅太乙 - 태을 포국",
+        "lang_label": "언어 Language",
+        "param_header": "포국 파라미터 설정",
+        "year": "년",
+        "month": "월",
+        "day": "일",
+        "hour": "시",
+        "minute": "분",
+        "chart_method": "기반 방식",
+        "acc_years": "태을 적년수",
+        "ten_essences": "태을 십정(十精)",
+        "life_gender": "태을 명법 성별",
+        "rotation_label": "전반(轉盤)",
+        "instant_btn": "즉시반",
+        "ai_settings": "AI 설정",
+        "ai_provider": "AI 서비스 제공자",
+        "ai_model": "AI 모델",
+        "custom_provider_section": "사용자 정의 제공자 설정",
+        "custom_provider_name": "이름",
+        "custom_provider_api_mode": "API 모드",
+        "custom_provider_api_mode_option": "OpenAI API 호환",
+        "custom_provider_api_key": "API 키",
+        "custom_provider_show_key": "키 표시",
+        "custom_provider_check_btn": "확인",
+        "custom_provider_api_host": "API 호스트",
+        "custom_provider_api_path": "API 경로",
+        "custom_provider_network_compat": "네트워크 호환성 개선",
+        "custom_provider_models_label": "모델",
+        "custom_provider_add_model": "+ 추가",
+        "custom_provider_reset_models": "↺ 초기화",
+        "custom_provider_fetch_models": "⟳ 가져오기",
+        "custom_provider_no_models": "사용 가능한 모델 없음",
+        "custom_provider_new_model_placeholder": "모델 이름 입력",
+        "custom_provider_key_ok": "✅ 유효한 키",
+        "custom_provider_key_fail": "❌ 유효하지 않은 키: {}",
+        "custom_provider_fetch_ok": "✅ {}개 모델을 가져왔습니다",
+        "custom_provider_fetch_fail": "❌ 가져오기 실패: {}",
+        "custom_provider_api_key_missing": "사용자 정의 제공자 API 키를 입력해 주세요.",
+        "custom_provider_host_missing": "API 호스트를 입력해 주세요.",
+        "ai_custom_quota_exceeded": "⚠️ 사용자 정의 제공자 API 할당량이 소진되었거나 속도 제한 상태입니다. 잠시 후 다시 시도해 주세요.",
+        "openai_api_key_label": "OpenAI API 키",
+        "openai_api_key_placeholder": "OpenAI API 키를 입력하세요 (sk-...)",
+        "openai_api_key_missing": "OpenAI API 키를 입력해 주세요.",
+        "xai_api_key_label": "xAI API 키",
+        "xai_api_key_placeholder": "xAI API 키를 입력하세요 (xai-...)",
+        "xai_api_key_missing": "xAI API 키를 입력해 주세요.",
+        "deepseek_api_key_label": "DeepSeek API 키",
+        "deepseek_api_key_placeholder": "DeepSeek API 키를 입력하세요 (sk-...)",
+        "deepseek_api_key_missing": "DeepSeek API 키를 입력해 주세요.",
+        "qwen_api_key_label": "Qwen API 키",
+        "qwen_api_key_placeholder": "통의천문(Qwen) API 키를 입력하세요",
+        "qwen_api_key_missing": "Qwen API 키를 입력해 주세요.",
+        "select_prompt": "시스템 프롬프트 선택",
+        "select_prompt_help": "AI 모델에 사용할 시스템 프롬프트를 선택합니다. 태을 포국 결과 분석을 지도합니다",
+        "edit_prompt": "시스템 프롬프트 편집",
+        "edit_prompt_placeholder": "예: 당신은 태을신수 전문가입니다. 포국 데이터를 바탕으로 상세한 분석을 한국어로 제공하세요...",
+        "update_prompt": "💾 프롬프트 업데이트",
+        "delete_prompt": "❌ 프롬프트 삭제",
+        "add_prompt_expander": "➕ 프롬프트 추가",
+        "add_prompt_btn": "➕ 프롬프트 추가",
+        "new_prompt_name": "새 프롬프트 이름",
+        "new_prompt_content": "새 프롬프트 내용",
+        "new_prompt_placeholder": "AI 분석 지시문을 입력하세요...",
+        "prompt_exists": "프롬프트 이름 '{}'이(가) 이미 존재합니다.",
+        "prompt_updated": "✅ 시스템 프롬프트 '{}'을(를) 업데이트했습니다!",
+        "prompt_deleted": "✅ 시스템 프롬프트 '{}'을(를) 삭제했습니다!",
+        "prompt_added": "✅ 시스템 프롬프트 '{}'을(를) 추가했습니다!",
+        "advanced_settings": "🔧 고급 설정",
+        "max_tokens": "최대 생성 Tokens",
+        "max_tokens_help": "AI 응답의 최대 길이를 조절합니다",
+        "temperature": "온도 (정확 vs. 창의)",
+        "temperature_help": "낮은 값(예: 0.2)은 더 확정적이고, 높은 값(예: 0.8)은 더 무작위적입니다",
+        "debug_mode": "🔍 디버그 모드",
+        "debug_help": "session state 같은 디버그 정보를 표시합니다",
+        "debug_info": "🐛 디버그 정보",
+        # 탭
+        "tab_chart": "🧮 태을 포국",
+        "tab_instructions": "💬 사용 설명",
+        "tab_history": "📜 국수 사례",
+        "tab_disaster": "🔥 재이 통계",
+        "tab_books": "📚 고서 목록",
+        "tab_updates": "🆕 업데이트 로그",
+        "tab_guide": "🚀 간반 요령",
+        "tab_links": "🔗 링크",
         # Main content
-        "explanation": "解釋",
-        "taiyi_life_title": "《太乙命法》︰",
-        "twelve_palaces": "【十二宮分析】",
-        "sixteen_gods": "【太乙十六神落宮】",
-        "sixteen_grades": "【太乙十六神上中下等】",
-        "hexagram": "【值卦】",
-        "year_hex": "年卦：",
-        "month_hex": "月卦：",
-        "day_hex": "日卦：",
-        "hour_hex": "時卦：",
-        "minute_hex": "分卦：",
-        "yang_nine": "【陽九行限】",
-        "bai_liu": "【百六行限】",
-        "taiyi_mishu": "《太乙秘書》︰",
-        "history_records": "史事記載︰",
-        "chart_analysis": "太乙盤局分析︰",
-        "year_star_predict": "太歲值宿斷事︰",
-        "start_star_predict": "始擊值宿斷事︰",
-        "ten_stem_predict": "十天干歲始擊落宮預測︰",
-        "sky_ground_method": "推太乙在天外地內法︰",
-        "three_five": "三門五將︰",
-        "home_away": "推主客相關︰",
-        "win_loss": "推少多以占勝負︰",
-        "wind_cloud": "推太乙風雲飛鳥助戰︰",
-        "solitary": "推孤單以占成敗:",
-        "yin_yang_adversity": "推陰陽以占厄會︰",
-        "emperor_tour": "明天子巡狩之期術︰",
-        "ruler_base": "明君基太乙所主術︰",
-        "minister_base": "明臣基太乙所主術︰",
-        "people_base": "明民基太乙所主術︰",
-        "five_blessings": "明五福太乙所主術︰",
-        "five_blessings_calc": "明五福吉算所主術︰",
-        "heaven_yi": "明天乙太乙所主術︰",
-        "earth_yi": "明地乙太乙所主術︰",
-        "zhifu": "明值符太乙所主術︰",
+        "explanation": "해석",
+        "taiyi_life_title": "《태을명법(太乙命法)》:",
+        "twelve_palaces": "【십이궁(十二宮) 분석】",
+        "sixteen_gods": "【태을 십육신(十六神) 낙궁】",
+        "sixteen_grades": "【태을 십육신(十六神) 상·중·하등】",
+        "hexagram": "【치괘(值卦)】",
+        "year_hex": "연괘(年卦):",
+        "month_hex": "월괘(月卦):",
+        "day_hex": "일괘(日卦):",
+        "hour_hex": "시괘(時卦):",
+        "minute_hex": "분괘(分卦):",
+        "yang_nine": "【양구행한(陽九行限)】",
+        "bai_liu": "【백육행한(百六行限)】",
+        "taiyi_mishu": "《태을비서(太乙秘書)》:",
+        "history_records": "사적 기록(史事記載):",
+        "chart_analysis": "태을 반국(盤局) 분석:",
+        "year_star_predict": "태세 치수 단사(太歲值宿斷事):",
+        "start_star_predict": "시격 치수 단사(始擊值宿斷事):",
+        "ten_stem_predict": "십천간 세·시격 낙궁 예측(十天干歲始擊落宮):",
+        "sky_ground_method": "태을 재천외지내법(推太乙在天外地內法):",
+        "three_five": "삼문오장(三門五將):",
+        "home_away": "주객 상관 추산(推主客相關):",
+        "win_loss": "소다로 승부 점침(推少多以占勝負):",
+        "wind_cloud": "태을 풍운 비조 조전 추산(推太乙風雲飛鳥助戰):",
+        "solitary": "고단으로 성패 점침(推孤單以占成敗):",
+        "yin_yang_adversity": "음양으로 액회 점침(推陰陽以占厄會):",
+        "emperor_tour": "천자 순수 시기술(明天子巡狩之期術):",
+        "ruler_base": "군기 태을 소주술(明君基太乙所主術):",
+        "minister_base": "신기 태을 소주술(明臣基太乙所主術):",
+        "people_base": "민기 태을 소주술(明民基太乙所主術):",
+        "five_blessings": "오복 태을 소주술(明五福太乙所主術):",
+        "five_blessings_calc": "오복 길산 소주술(明五福吉算所主術):",
+        "heaven_yi": "천을 태을 소주술(明天乙太乙所主術):",
+        "earth_yi": "지을 태을 소주술(明地乙太乙所主術):",
+        "zhifu": "치부 태을 소주술(明值符太乙所主術):",
         # AI
-        "ai_analyze_btn": "🔍 使用AI分析排盤結果",
-        "ai_analyzing": "AI正在分析太乙排盤結果...",
-        "ai_key_missing": "CEREBRAS_API_KEY 未設置，請在 .streamlit/secrets.toml 或環境變量中設置。",
-        "ai_error": "調用AI時發生錯誤：{}",
-        "ai_quota_exceeded": "⚠️ Cerebras API 每日 Token 配額已用盡，請稍後再試或降低「最大生成 Tokens」設定。",
-        "ai_openai_quota_exceeded": "⚠️ OpenAI API 配額已用盡或速率受限，請稍後再試。",
-        "ai_xai_quota_exceeded": "⚠️ xAI API 配額已用盡或速率受限，請稍後再試。",
-        "ai_deepseek_quota_exceeded": "⚠️ DeepSeek API 配額已用盡或速率受限，請稍後再試。",
-        "ai_qwen_quota_exceeded": "⚠️ Qwen API 配額已用盡或速率受限，請稍後再試。",
-        "gen_error": "生成盤局時發生錯誤：{}",
-        "ai_result": "AI分析結果",
-        "list_label": "列表",
-        "save_error": "錯誤儲存提示：{}",
+        "ai_analyze_btn": "🔍 AI로 포국 결과 분석",
+        "ai_analyzing": "AI가 태을 포국 결과를 분석하는 중...",
+        "ai_key_missing": "CEREBRAS_API_KEY가 설정되지 않았습니다. .streamlit/secrets.toml 또는 환경 변수에 설정해 주세요.",
+        "ai_error": "AI 호출 중 오류가 발생했습니다: {}",
+        "ai_quota_exceeded": "⚠️ Cerebras API 일일 토큰 할당량이 소진되었습니다. 잠시 후 다시 시도하거나 「최대 생성 Tokens」 설정을 낮춰 주세요.",
+        "ai_openai_quota_exceeded": "⚠️ OpenAI API 할당량이 소진되었거나 속도 제한 상태입니다. 잠시 후 다시 시도해 주세요.",
+        "ai_xai_quota_exceeded": "⚠️ xAI API 할당량이 소진되었거나 속도 제한 상태입니다. 잠시 후 다시 시도해 주세요.",
+        "ai_deepseek_quota_exceeded": "⚠️ DeepSeek API 할당량이 소진되었거나 속도 제한 상태입니다. 잠시 후 다시 시도해 주세요.",
+        "ai_qwen_quota_exceeded": "⚠️ Qwen API 할당량이 소진되었거나 속도 제한 상태입니다. 잠시 후 다시 시도해 주세요.",
+        "gen_error": "반국 생성 중 오류가 발생했습니다: {}",
+        "ai_result": "AI 분석 결과",
+        "list_label": "목록",
+        "save_error": "프롬프트 저장 중 오류: {}",
         # Chat
-        "chat_header": "💬 AI 對話",
-        "chat_placeholder": "輸入問題，與太乙AI大師對話...",
-        "chat_thinking": "AI 正在思考...",
-        "chat_welcome": "你好！我是太乙AI助手，可以為你解答關於太乙神數的問題。請輸入你的問題。",
-        "chat_clear": "🗑️ 清除對話",
-        # 博弈論
-        "game_theory_toggle": "🎯 啟用運籌博弈分析（Nash 均衡）",
-        "game_theory_header": "⚔️ 運籌博弈分析（太乙古法 × Nash 均衡）",
-        "game_theory_payoff": "零和支付矩陣（主方視角）",
-        "game_theory_home_strategy": "主方最優混合策略",
-        "game_theory_away_strategy": "客方最優混合策略",
-        "game_theory_value": "博弈均衡值（期望支付）",
-        "game_theory_lp": "線性規劃最優建議",
-        "game_theory_winrate": "主方勝率判斷",
-        "game_theory_computing": "⚙️ 正在計算 Nash 均衡...",
-        # Print labels
-        "lunar_label": "農曆",
-        "taiyi_life_method": "太乙命法",
-        "epoch_label": "紀元",
-        "home_calc": "主筭",
-        "away_calc": "客筭",
-        "set_calc": "定筭",
-        "five_yuan": "五子元局",
-        "acc_prefix": "積",
-        "acc_suffix": "數",
+        "chat_header": "💬 AI 대화",
+        "chat_placeholder": "질문을 입력해 태을 AI 대가와 대화하세요...",
+        "chat_thinking": "AI가 생각하는 중...",
+        "chat_welcome": "안녕하세요! 저는 태을 AI 어시스턴트입니다. 태을신수에 관한 질문에 답해드릴 수 있어요. 질문을 입력해 주세요.",
+        "chat_clear": "🗑️ 대화 지우기",
+        # 운주 박지론
+        "game_theory_toggle": "🎯 운주 박지(博弈) 분석 활성화 (Nash 균형)",
+        "game_theory_header": "⚔️ 운주 박지 분석 (태을 고법 × Nash 균형)",
+        "game_theory_payoff": "제로섬 보수 행렬 (주방 시점)",
+        "game_theory_home_strategy": "주방 최적 혼합 전략",
+        "game_theory_away_strategy": "객방 최적 혼합 전략",
+        "game_theory_value": "박지 균형값 (기대 보수)",
+        "game_theory_lp": "선형 계획 최적 제안",
+        "game_theory_winrate": "주방 승률 판단",
+        "game_theory_computing": "⚙️ Nash 균형을 계산하는 중...",
+        # 출력 라벨
+        "lunar_label": "음력",
+        "taiyi_life_method": "태을명법",
+        "epoch_label": "기원",
+        "home_calc": "주산(主筭)",
+        "away_calc": "객산(客筭)",
+        "set_calc": "정산(定筭)",
+        "five_yuan": "오자원국(五子元局)",
+        "acc_prefix": "적",
+        "acc_suffix": "수",
     },
     "en": {
         "page_title": "KinTaiYi - Taiyi Divination Chart",
@@ -441,18 +441,34 @@ OPTION_LABELS = {
         "固定": "Fixed",
         "轉動": "Rotating",
     },
+    "zh": {
+        "時計太乙": "시계 태을(時計)",
+        "年計太乙": "연계 태을(年計)",
+        "月計太乙": "월계 태을(月計)",
+        "日計太乙": "일계 태을(日計)",
+        "分計太乙": "분계 태을(分計)",
+        "太乙命法": "태을명법(太乙命法)",
+        "太乙統宗": "태을통종(太乙統宗)",
+        "太乙金鏡": "태을금경(太乙金鏡)",
+        "太乙淘金歌": "태을도금가(太乙淘金歌)",
+        "太乙局": "태을국(太乙局)",
+        "有": "있음",
+        "無": "없음",
+        "男": "남성",
+        "女": "여성",
+        "固定": "고정",
+        "轉動": "회전",
+    },
 }
 
 def t(key):
-    """Get translated UI text for the current language."""
+    """현재 언어에 맞는 UI 텍스트를 반환한다."""
     lang = st.session_state.get("lang", "zh")
     return TRANSLATIONS.get(lang, TRANSLATIONS["zh"]).get(key, key)
 
 def to(option):
-    """Translate a selectbox option value for display."""
+    """셀렉트박스 옵션 값을 표시용으로 변환한다."""
     lang = st.session_state.get("lang", "zh")
-    if lang == "zh":
-        return option
     return OPTION_LABELS.get(lang, {}).get(option, option)
 
 # Cerebras Model Options
@@ -530,12 +546,12 @@ QWEN_MODEL_DESCRIPTIONS = {
 def load_system_prompts():
     SYSTEM_PROMPTS_FILE = os.path.join(_REPO_ROOT, "assets", "system_prompts.json")
     DEFAULT_SYSTEM_PROMPT = (
-        "你是一位太乙神數大師，熟悉《太乙秘書》、《太乙命法》歷史案例。請根據提供的太乙排盤數據，進行以下操作：\n"
-        "1. 解釋盤局的關鍵要素（主筭、客筭、始擊、太歲等）。\n"
-        "2. 結合《太乙秘書》中的理論，分析盤局的吉凶和潛在影響。\n"
-        "3. 若為太乙命法，評估命主的運勢和人生趨勢。\n"
-        "4. 提供實用的建議或應對策略。\n"
-        "請以清晰的結構（分段、標題）呈現，語言專業且易懂，適當引用歷史案例或經典理論。"
+        "당신은 《태을비서(太乙秘書)》, 《태을명법(太乙命法)》의 역사 사례에 정통한 태을신수 대가입니다. 제공된 태을 포국 데이터를 바탕으로 다음을 수행하세요:\n"
+        "1. 반국(盤局)의 핵심 요소(주산·객산·시격·태세 등)를 설명합니다.\n"
+        "2. 《태을비서(太乙秘書)》의 이론에 결합하여 반국의 길흉과 잠재적 영향을 분석합니다.\n"
+        "3. 태을명법인 경우, 명주(命主)의 운세와 인생 흐름을 평가합니다.\n"
+        "4. 실용적인 조언이나 대응 전략을 제시합니다.\n"
+        "명확한 구조(단락·제목)로 제시하고, 전문적이면서도 이해하기 쉬운 한국어로 작성하며, 역사 사례나 고전 이론을 적절히 인용하세요."
     )
     
     try:
@@ -545,11 +561,11 @@ def load_system_prompts():
         default_data = {
             "prompts": [
                 {
-                    "name": "太乙大師",
+                    "name": "태을 대가",
                     "content": DEFAULT_SYSTEM_PROMPT
                 }
             ],
-            "selected": "太乙大師"
+            "selected": "태을 대가"
         }
         with open(SYSTEM_PROMPTS_FILE, "w") as f:
             json.dump(default_data, f, indent=2)
@@ -942,12 +958,12 @@ BASE_URL_KINLIUREN = 'https://raw.githubusercontent.com/kentang2017/kinliuren/ma
 # 側邊欄輸入
 with st.sidebar:
     lang_choice = st.selectbox(
-        "語言 Language",
-        ["中文", "English"],
+        "언어 Language",
+        ["한국어", "English"],
         index=0 if st.session_state.lang == "zh" else 1,
         key="lang_select",
     )
-    new_lang = "zh" if lang_choice == "中文" else "en"
+    new_lang = "zh" if lang_choice == "한국어" else "en"
     if new_lang != st.session_state.lang:
         st.session_state.lang = new_lang
         st.rerun()
@@ -984,7 +1000,7 @@ with st.sidebar:
 
     ai_provider = st.selectbox(
         t("ai_provider"),
-        options=["Cerebras", "OpenAI", "xAI (Grok)", "DeepSeek", "Qwen", "自定義"],
+        options=["Cerebras", "OpenAI", "xAI (Grok)", "DeepSeek", "Qwen", "사용자 정의"],
         index=0,
         key="ai_provider_selector",
     )
@@ -1048,7 +1064,7 @@ with st.sidebar:
             key="qwen_model_selector",
             help="\n".join(f"• {k}: {v}" for k, v in QWEN_MODEL_DESCRIPTIONS.items())
         )
-    elif ai_provider == "自定義":
+    elif ai_provider == "사용자 정의":
         # ── Custom provider settings ──────────────────────────────
         if "custom_provider_models" not in st.session_state:
             st.session_state.custom_provider_models = []
@@ -1056,7 +1072,7 @@ with st.sidebar:
         st.text_input(
             t("custom_provider_name"),
             key="custom_provider_name",
-            placeholder="自定義服務商",
+            placeholder="사용자 정의 제공자",
         )
         st.selectbox(
             t("custom_provider_api_mode"),
@@ -1679,7 +1695,7 @@ with tabs[0]:
                                     st.error(t("ai_qwen_quota_exceeded"))
                                 except Exception as e:
                                     st.error(t("ai_error").format(str(e)))
-                        elif _provider == "自定義":
+                        elif _provider == "사용자 정의":
                             _ckey = st.session_state.get("custom_provider_api_key", "").strip()
                             _chost = st.session_state.get("custom_provider_api_host", "").strip()
                             _cpath = st.session_state.get("custom_provider_api_path", "").strip()
@@ -1953,7 +1969,7 @@ if user_input := st.chat_input(t("chat_placeholder")):
                         error_msg = t("ai_error").format(str(e))
                         st.error(error_msg)
                         st.session_state.chat_messages.append({"role": "assistant", "content": error_msg})
-        elif _provider == "自定義":
+        elif _provider == "사용자 정의":
             _ckey = st.session_state.get("custom_provider_api_key", "").strip()
             _chost = st.session_state.get("custom_provider_api_host", "").strip()
             _cpath = st.session_state.get("custom_provider_api_path", "").strip()
