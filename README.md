@@ -1,8 +1,8 @@
 <div align="center">
 
-# 🌟 Python 太乙神數 | Kintaiyi 堅太乙
+# 🌟 Python 太乙神數(태을신수) | Kintaiyi 堅太乙
 
-### 自古君王官臣珍重、上測天文下測國運必用之法 — 最豐富的開源太乙神數排盤工具
+### 예부터 군왕과 관신이 귀히 여겨, 위로 천문을 아래로 국운을 점치는 데 반드시 쓰였던 법 — 가장 풍부한 오픈소스 태을신수 포국 도구
 
 *The most authentic open-source Taiyi Shenshu (太乙神數) divination engine in Python*
 
@@ -17,7 +17,7 @@
 
 <br/>
 
-[🚀 **立即在線體驗 Live Demo**](https://kintaiyi.streamlitapp.com) &nbsp;|&nbsp; [🎬 **YouTube 介紹**](https://www.youtube.com/watch?v=FKnPu8FOIlc) &nbsp;|&nbsp; [📦 **PyPI**](https://pypi.org/project/kintaiyi/) &nbsp;|&nbsp; [📖 **Wiki**](https://github.com/kentang2017/kintaiyi/wiki)
+[🚀 **지금 온라인 체험 Live Demo**](https://kintaiyi.streamlitapp.com) &nbsp;|&nbsp; [🎬 **YouTube 소개**](https://www.youtube.com/watch?v=FKnPu8FOIlc) &nbsp;|&nbsp; [📦 **PyPI**](https://pypi.org/project/kintaiyi/) &nbsp;|&nbsp; [📖 **Wiki**](https://github.com/kentang2017/kintaiyi/wiki)
 
 <br/>
 
@@ -26,60 +26,64 @@
 
 </div>
 
+> 🇰🇷 이 저장소는 **molpass가 포크한 사본**입니다. 원문(中文·English)은 [README.en.md](./README.en.md)를 참고하세요.
+
 ---
 
-## 📑 目錄 Table of Contents
+## 📑 목차 Table of Contents
 
-- [✨ 亮點 Highlights](#-亮點-highlights)
-- [📖 簡介 Introduction](#-簡介-introduction)
-- [🚀 快速開始 Quick Start](#-快速開始-quick-start)
-- [📋 支援功能 Features](#-支援功能-features)
-- [🖼️ 截圖與演示 Screenshots & Demo](#️-截圖與演示-screenshots--demo)
-- [📦 安裝 Installation](#-安裝-installation)
-- [🔧 進階使用 Advanced Usage](#-進階使用-advanced-usage)
-- [🤝 貢獻指南 Contributing](#-貢獻指南-contributing)
-- [💬 聯絡與社群 Contact & Community](#-聯絡與社群-contact--community)
+- [✨ 하이라이트 Highlights](#-하이라이트-highlights)
+- [📖 소개 Introduction](#-소개-introduction)
+- [🚀 빠른 시작 Quick Start](#-빠른-시작-quick-start)
+- [📋 지원 기능 Features](#-지원-기능-features)
+- [🖼️ 스크린샷과 데모 Screenshots & Demo](#️-스크린샷과-데모-screenshots--demo)
+- [📦 설치 Installation](#-설치-installation)
+- [🔧 고급 사용법 Advanced Usage](#-고급-사용법-advanced-usage)
+- [🤝 기여 안내 Contributing](#-기여-안내-contributing)
+- [💬 연락 및 커뮤니티 Contact & Community](#-연락-및-커뮤니티-contact--community)
 - [📄 License](#-license)
-- [🔗 相關專案 Related Projects](#-相關專案-related-projects)
+- [🔗 관련 프로젝트 Related Projects](#-관련-프로젝트-related-projects)
 
 ---
 
-- 🔮 **六種計法齊備** — 年計、月計、日計、時計、分計、命法，覆蓋所有太乙推算場景
+## ✨ 하이라이트 Highlights
+
+- 🔮 **여섯 가지 계법 완비** — 연계(年計)·월계(月計)·일계(日計)·시계(時計)·분계(分計)·명법(命法), 모든 태을 추산 상황을 망라
   **Six Calculation Modes** — Year, Month, Day, Hour, Minute, and Life Destiny, covering all Taiyi divination scenarios
-- 📜 **四大古法並存** — 太乙統宗、太乙金鏡、太乙淘金歌、太乙局，正宗古法不簡化
+- 📜 **4대 고법 병존** — 태을통종(太乙統宗)·태을금경(太乙金鏡)·태을도금가(太乙淘金歌)·태을국(太乙局), 정통 고법을 단순화하지 않음
   **Four Classical Methods** — Taiyi Tongzong, Taiyi Jinjing, Taiyi Taojin Ge, and Taiyi Ju — authentic ancient formulas without simplification
-- 📊 **輸出內容豐富** — 干支、局式、神煞、二十八宿、八門、八宮旺衰、兵陣預測、歷史年號對應
+- 📊 **풍부한 출력 내용** — 간지·국식·신살·이십팔수·팔문·팔궁 왕쇠·병진 예측·역사 연호 대응
   **Rich Output** — Stems & Branches, board configuration, spirit indicators, 28 Lunar Mansions, Eight Gates, palace prosperity, battle predictions, and historical reign-year mapping
-- 🏯 **歷史年號對照** — 內建完整中國歷代紀年與農曆換算
+- 🏯 **역사 연호 대조** — 중국 역대 기년과 음력 환산을 완비 내장
   **Historical Reign-Year Mapping** — Built-in complete Chinese dynastic chronology and lunar calendar conversion
-- 🖥️ **多種使用方式** — Python API + Typer CLI + Streamlit 圖形介面，各取所需
+- 🖥️ **다양한 사용 방식** — Python API + Typer CLI + Streamlit 그래픽 인터페이스, 필요에 맞게 선택
   **Multiple Interfaces** — Python API + Typer CLI + Streamlit web GUI — use whichever suits your needs
-- 🤖 **AI 智能分析** — 整合 Cerebras AI，可自動解讀盤面
+- 🤖 **AI 지능 분석** — Cerebras AI를 통합하여 반면(盤面)을 자동 해석
   **AI-Powered Analysis** — Integrated with Cerebras AI for automatic board interpretation
 
 ---
 
-## 📖 簡介 Introduction
+## 📖 소개 Introduction
 
-**太乙神數**，與奇門遁甲、大六壬合稱「三式」，是中國古代最高層次的術數體系之一，專門用於推算天時國運與歷史變化規律。其法源於《易緯·乾鑿度》太乙行九宮法，相傳始於黃帝戰蚩尤之時，延續至今三千餘年。
+**태을신수(太乙神數)**는 기문둔갑·대육임과 더불어 「삼식(三式)」으로 불리며, 중국 고대 최고 수준의 술수 체계 중 하나로 천시(天時)와 국운, 역사 변화의 규율을 추산하는 데 전문적으로 쓰였습니다. 그 법은 《역위·건착도(易緯·乾鑿度)》의 태을 행구궁법(行九宮法)에서 비롯되었으며, 황제(黃帝)가 치우(蚩尤)와 싸우던 때 시작되어 3천여 년간 이어져 왔다고 전합니다.
 
 **Tai Yi Shen Shu (太乙神數)**, together with Qi Men Dun Jia (奇門遁甲) and Da Liu Ren (大六壬), is known as the "Three Styles" (三式) — one of the highest-level divination systems in ancient China, specifically used for predicting celestial timing, national fortune, and historical patterns. The method originates from the *Yi Wei · Qian Zao Du* (易緯·乾鑿度) and the Taiyi Nine Palace traversal, said to date back to the era of the Yellow Emperor's battle against Chi You — over three thousand years ago.
 
-**Kintaiyi 堅太乙**，取「堅守古法」之意。本套件嚴格依照古籍記載實現演算法，不做簡化、不作省略，旨在為太乙神數的研究者與愛好者提供一套**可驗證、可復現**的開源工具。無論是年運推算、國事預測，還是個人命理，皆可一鍵排盤。
+**Kintaiyi 堅太乙**는 「고법을 굳건히 지킨다(堅守古法)」는 뜻입니다. 본 패키지는 고서의 기록을 엄격히 따라 알고리즘을 구현하며, 단순화하거나 생략하지 않습니다. 태을신수 연구자와 애호가에게 **검증 가능하고 재현 가능한** 오픈소스 도구를 제공하는 것이 목표입니다. 연운 추산, 국사 예측, 개인 명리 어느 것이든 한 번에 포국할 수 있습니다.
 
 **Kintaiyi (堅太乙)** means "steadfastly upholding ancient methods." This library strictly follows classical texts to implement its algorithms — no simplification, no omission — aiming to provide researchers and enthusiasts with a **verifiable and reproducible** open-source tool. Whether for yearly fortune prediction, national affairs forecasting, or personal destiny analysis, a complete divination board can be generated with a single command.
 
 ---
 
-## 🚀 快速開始 Quick Start
+## 🚀 빠른 시작 Quick Start
 
-### 安裝 Installation
+### 설치 Installation
 
 ```bash
 pip install kintaiyi
 ```
 
-選裝 CLI 或 Web 界面 / Optional extras for CLI or Web interface：
+CLI 또는 Web 인터페이스 선택 설치 / Optional extras for CLI or Web interface：
 
 ```bash
 pip install kintaiyi[cli]       # 命令列工具 / Command-line tool (Typer CLI)
@@ -87,7 +91,7 @@ pip install kintaiyi[app]       # Streamlit 圖形介面 / Streamlit GUI
 pip install kintaiyi[cli,app]   # 全部安裝 / Install all
 ```
 
-### Python 程式碼範例 Python Code Example
+### Python 코드 예시 Python Code Example
 
 ```python
 from kintaiyi.kintaiyi import Taiyi
@@ -100,7 +104,7 @@ print(result["二十八宿值日"])  # → 二十八宿值日星
 print(result["推主客相闗法"])  # → 主客勝負判斷
 ```
 
-### CLI 命令列範例 CLI Examples
+### CLI 명령줄 예시 CLI Examples
 
 ```bash
 # 年計排盤 / Year calculation board
@@ -113,7 +117,7 @@ kintaiyi calculate --date 2026-03-24 --time 12:30 --mode day --output json
 kintaiyi calculate --date 1990-05-15 --time 08:00 --mode life --sex male
 ```
 
-### Streamlit 一鍵啟動 Streamlit Quick Launch
+### Streamlit 원클릭 실행 Streamlit Quick Launch
 
 ```bash
 pip install kintaiyi[app]
@@ -122,76 +126,76 @@ streamlit run apps/streamlit_app.py
 
 ---
 
-## 📋 支援功能 Features
+## 📋 지원 기능 Features
 
-### 計法模式 Calculation Modes
+### 계법 모드 Calculation Modes
 
-| 模式 Mode | ji_style | 說明 Description |
+| 모드 Mode | ji_style | 설명 Description |
 |-----------|----------|-----------------|
-| 年計 Year | `0` | 推算年運、國運大勢 / Predict yearly and national fortune trends |
-| 月計 Month | `1` | 推算月份氣運吉凶 / Predict monthly auspiciousness and energy flow |
-| 日計 Day | `2` | 推算日課吉凶 / Predict daily auspiciousness |
-| 時計 Hour | `3` | 推算時辰吉凶 / Predict hourly auspiciousness |
-| 分計 Minute | `4` | 現代延伸，精確至分鐘 / Modern extension, precise to the minute |
-| 命法 Life | `5` | 個人命理推算 / Personal destiny calculation |
+| 연계 Year | `0` | 연운·국운 대세 추산 / Predict yearly and national fortune trends |
+| 월계 Month | `1` | 월별 기운 길흉 추산 / Predict monthly auspiciousness and energy flow |
+| 일계 Day | `2` | 일과(日課) 길흉 추산 / Predict daily auspiciousness |
+| 시계 Hour | `3` | 시진 길흉 추산 / Predict hourly auspiciousness |
+| 분계 Minute | `4` | 현대적 확장, 분 단위 정밀 / Modern extension, precise to the minute |
+| 명법 Life | `5` | 개인 명리 추산 / Personal destiny calculation |
 
-### 古法公式 Taiyi Methods
+### 고법 공식 Taiyi Methods
 
-| 方法 Method | method | 來源 Source |
+| 방법 Method | method | 출처 Source |
 |------------|--------|------------|
-| 太乙統宗 Taiyi Tongzong | `0` | 《太乙統宗寶鑑》*Taiyi Tongzong Baojian* |
-| 太乙金鏡 Taiyi Jinjing | `1` | 《太乙金鏡式經》*Taiyi Jinjing Shi Jing* |
-| 太乙淘金歌 Taiyi Taojin Ge | `2` | 《太乙淘金歌》*Taiyi Taojin Ge* |
-| 太乙局 Taiyi Ju | `3` | 《太乙局》*Taiyi Ju* |
+| 태을통종 Taiyi Tongzong | `0` | 《太乙統宗寶鑑》*Taiyi Tongzong Baojian* |
+| 태을금경 Taiyi Jinjing | `1` | 《太乙金鏡式經》*Taiyi Jinjing Shi Jing* |
+| 태을도금가 Taiyi Taojin Ge | `2` | 《太乙淘金歌》*Taiyi Taojin Ge* |
+| 태을국 Taiyi Ju | `3` | 《太乙局》*Taiyi Ju* |
 
-### 輸出內容 Output Fields
+### 출력 내용 Output Fields
 
-盤面輸出涵蓋以下資訊（Output includes but is not limited to）：
+반면 출력은 다음 정보를 포함합니다(Output includes but is not limited to)：
 
-- **基本資訊** — 公元日期、農曆、干支五柱、歷史年號 / Basic Info — Gregorian date, lunar date, Five Pillars (stems & branches), historical reign year
-- **局式** — 陰陽遁、局數、積年數、紀元 / Board Configuration — Yin/Yang escape, board number, accumulated years, epoch
-- **太乙諸神** — 太乙、天乙、地乙、四神、直符、文昌、計神、合神 / Taiyi Spirits — Taiyi, Tianyi, Diyi, Four Spirits, Zhifu, Wenchang, Jishen, Heshen
-- **主客算** — 主算、客算、定算，含三才數與格局判斷 / Host & Guest Calculations — host count, guest count, fixed count, including Three Powers (San Cai) numbers and pattern analysis
-- **八門八宮** — 八門值事與分佈、八宮旺衰 / Eight Gates & Eight Palaces — gate assignments, distribution, and palace prosperity
-- **二十八宿** — 值日宿、太歲宿、始擊宿及斷事 / 28 Lunar Mansions — duty mansion, Tai Sui mansion, initial-strike mansion, and interpretations
-- **兵陣預測** — 推主客相關法、飛鳥助戰法、風雲諸法 / Battle Predictions — host-guest analysis, flying-bird battle assistance, wind-cloud techniques
-- **七大兵法** — 雷公入水、臨津問道、獅子反擲、白雲捲空、猛虎相拒、白龍得雲、回軍無言 / Seven Military Strategies — Thunder Lord Enters Water, Asking the Way at the Ford, Lion's Reverse Throw, White Cloud Rolls the Sky, Fierce Tiger Standoff, White Dragon Seizes Cloud, Silent Army Retreat
+- **기본 정보** — 서기 날짜·음력·간지 오주(五柱)·역사 연호 / Basic Info — Gregorian date, lunar date, Five Pillars (stems & branches), historical reign year
+- **국식** — 음양둔·국수·적년수·기원 / Board Configuration — Yin/Yang escape, board number, accumulated years, epoch
+- **태을 제신(諸神)** — 태을·천을·지을·사신·직부·문창·계신·합신 / Taiyi Spirits — Taiyi, Tianyi, Diyi, Four Spirits, Zhifu, Wenchang, Jishen, Heshen
+- **주객산(主客算)** — 주산·객산·정산, 삼재수(三才數)와 격국 판단 포함 / Host & Guest Calculations — host count, guest count, fixed count, including Three Powers (San Cai) numbers and pattern analysis
+- **팔문 팔궁** — 팔문 치사(値事)와 분포, 팔궁 왕쇠 / Eight Gates & Eight Palaces — gate assignments, distribution, and palace prosperity
+- **이십팔수** — 치일수(値日宿)·태세수·시격수(始擊宿) 및 단사(斷事) / 28 Lunar Mansions — duty mansion, Tai Sui mansion, initial-strike mansion, and interpretations
+- **병진 예측** — 추주객상관법·비조조전법·풍운 제법 / Battle Predictions — host-guest analysis, flying-bird battle assistance, wind-cloud techniques
+- **7대 병법** — 뇌공입수·임진문도·사자반척·백운권공·맹호상거·백룡득운·회군무언 / Seven Military Strategies — Thunder Lord Enters Water, Asking the Way at the Ford, Lion's Reverse Throw, White Cloud Rolls the Sky, Fierce Tiger Standoff, White Dragon Seizes Cloud, Silent Army Retreat
 
 ---
 
-## 🖼️ 截圖與演示 Screenshots & Demo
+## 🖼️ 스크린샷과 데모 Screenshots & Demo
 
-### 線上演示 Live Demo
+### 온라인 데모 Live Demo
 
 👉 [**https://kintaiyi.streamlitapp.com**](https://kintaiyi.streamlitapp.com)
 
-> 📌 大陸用戶可能需要使用 VPN 訪問 *(Mainland China users may need a VPN)*
+> 📌 중국 본토 사용자는 VPN이 필요할 수 있습니다 *(Mainland China users may need a VPN)*
 
-### 盤圖預覽 Board Preview
+### 반도(盤圖) 미리보기 Board Preview
 
 <div align="center">
 
 ![太乙九宮分野圖](https://github.com/kentang2017/kintaiyi/blob/master/pic/%E5%A4%AA%E4%B9%99%E4%B9%9D%E5%AE%AE%E5%88%86%E9%87%8E%E5%9C%96.jpg?raw=true)
 
-*太乙九宮分野圖 — Taiyi Nine Palace Sector Diagram*
+*태을 구궁 분야도 — Taiyi Nine Palace Sector Diagram*
 
 </div>
 
 ---
 
-## 📦 安裝 Installation
+## 📦 설치 Installation
 
-### 環境要求 Requirements
+### 환경 요구사항 Requirements
 
 - Python ≥ 3.10
 
-### 基本安裝 Basic Installation
+### 기본 설치 Basic Installation
 
 ```bash
 pip install kintaiyi
 ```
 
-### 可選依賴 Optional Extras
+### 선택 의존성 Optional Extras
 
 ```bash
 # CLI 命令列工具（基於 Typer）/ CLI command-line tool (based on Typer)
@@ -207,7 +211,7 @@ pip install kintaiyi[web]
 pip install kintaiyi[dev]
 ```
 
-### 從源碼安裝 Install from Source
+### 소스에서 설치 Install from Source
 
 ```bash
 git clone https://github.com/kentang2017/kintaiyi.git
@@ -217,27 +221,27 @@ pip install -e ".[cli,app,dev]"
 
 ---
 
-## 🔧 進階使用 Advanced Usage
+## 🔧 고급 사용법 Advanced Usage
 
-### CLI 完整參數 CLI Options
+### CLI 전체 옵션 CLI Options
 
 ```
 kintaiyi calculate [OPTIONS]
 ```
 
-| 參數 Option | 縮寫 | 說明 Description | 預設值 Default |
+| 옵션 Option | 약어 | 설명 Description | 기본값 Default |
 |-------------|------|-----------------|---------------|
-| `--year` | `-y` | 公元年 Year | 當前年份 Current |
-| `--month` | `-m` | 月 Month | 當前月份 Current |
-| `--day` | `-d` | 日 Day | 當前日期 Current |
-| `--hour` | `-H` | 時 Hour (0-23) | 當前小時 Current |
-| `--minute` | `-M` | 分 Minute (0-59) | 當前分鐘 Current |
-| `--date` | | 日期 Date (YYYY-MM-DD) | — |
-| `--time` | | 時間 Time (HH:MM) | — |
-| `--mode` | | 計法模式 Calculation mode | `year` |
-| `--method` | | 古法公式 Classical method (0-3) | `0` |
-| `--output` | `-o` | 輸出格式 Output format (text/json/markdown) | `text` |
-| `--sex` | `-s` | 性別（命法時必填：male/female）Sex (required for life mode) | — |
+| `--year` | `-y` | 서기 연도 Year | 현재 연도 Current |
+| `--month` | `-m` | 월 Month | 현재 월 Current |
+| `--day` | `-d` | 일 Day | 현재 날짜 Current |
+| `--hour` | `-H` | 시 Hour (0-23) | 현재 시 Current |
+| `--minute` | `-M` | 분 Minute (0-59) | 현재 분 Current |
+| `--date` | | 날짜 Date (YYYY-MM-DD) | — |
+| `--time` | | 시간 Time (HH:MM) | — |
+| `--mode` | | 계법 모드 Calculation mode | `year` |
+| `--method` | | 고법 공식 Classical method (0-3) | `0` |
+| `--output` | `-o` | 출력 형식 Output format (text/json/markdown) | `text` |
+| `--sex` | `-s` | 성별(명법 시 필수: male/female) Sex (required for life mode) | — |
 
 ```bash
 # 查看版本 / Check version
@@ -275,7 +279,7 @@ import json
 print(json.dumps(result, ensure_ascii=False, indent=2))
 ```
 
-### 輸出範例 Sample Output
+### 출력 예시 Sample Output
 
 ```python
 from kintaiyi.kintaiyi import Taiyi
@@ -301,19 +305,19 @@ result = Taiyi(1552, 9, 24, 0, 0).pan(ji_style=0, method=1)
 
 ---
 
-## 🤝 貢獻指南 Contributing
+## 🤝 기여 안내 Contributing
 
-我們歡迎所有形式的貢獻！*All contributions are welcome!*
+모든 형태의 기여를 환영합니다! *All contributions are welcome!*
 
-詳見 [CONTRIBUTING.md](CONTRIBUTING.md) / See [CONTRIBUTING.md](CONTRIBUTING.md) for full details.
+자세한 내용은 [CONTRIBUTING.md](CONTRIBUTING.md) 참고 / See [CONTRIBUTING.md](CONTRIBUTING.md) for full details.
 
-- 🐛 **Bug 回報** — 提交 [Issue](https://github.com/kentang2017/kintaiyi/issues) / Report bugs via Issues
-- ✨ **新功能** — 歡迎 PR 添加新古法、新計法 / PRs welcome for new methods and features
-- 📚 **課例驗證** — 提供歷史課例以驗證演算法準確性 / Provide historical examples to verify algorithm accuracy
-- 🌐 **翻譯** — 協助翻譯文檔或術語 / Help translate documentation or terminology
-- ⭐ **Star** — 最簡單的支持方式！/ The easiest way to show your support!
+- 🐛 **버그 제보** — [Issue](https://github.com/kentang2017/kintaiyi/issues) 제출 / Report bugs via Issues
+- ✨ **새 기능** — 새 고법·새 계법 추가 PR 환영 / PRs welcome for new methods and features
+- 📚 **과례 검증** — 역사 과례를 제공해 알고리즘 정확성 검증 / Provide historical examples to verify algorithm accuracy
+- 🌐 **번역** — 문서나 용어 번역 협력 / Help translate documentation or terminology
+- ⭐ **Star** — 가장 간단한 후원 방법! / The easiest way to show your support!
 
-### 開發環境設置 Development Setup
+### 개발 환경 설정 Development Setup
 
 ```bash
 git clone https://github.com/kentang2017/kintaiyi.git
@@ -330,16 +334,16 @@ ruff format src/
 
 ---
 
-## 💬 聯絡與社群 Contact & Community
+## 💬 연락 및 커뮤니티 Contact & Community
 
-| 渠道 Channel | 連結 Link |
+| 채널 Channel | 링크 Link |
 |-------------|----------|
-| 📢 Telegram 頻道 Channel | [numerology_coding](https://t.me/numerology_coding) |
-| 💬 Telegram 私訊 DM | [haizhonggum](https://t.me/haizhonggum) |
-| 🐛 GitHub Issues | [提交問題 Submit an Issue](https://github.com/kentang2017/kintaiyi/issues) |
-| 💰 PayPal 捐助 Donate | [paypal.me/kinyeah](https://www.paypal.me/kinyeah) |
+| 📢 Telegram 채널 Channel | [numerology_coding](https://t.me/numerology_coding) |
+| 💬 Telegram 개인 메시지 DM | [haizhonggum](https://t.me/haizhonggum) |
+| 🐛 GitHub Issues | [문제 제출 Submit an Issue](https://github.com/kentang2017/kintaiyi/issues) |
+| 💰 PayPal 후원 Donate | [paypal.me/kinyeah](https://www.paypal.me/kinyeah) |
 
-### 微信公眾號 WeChat Official Account
+### 위챗 공식 계정 WeChat Official Account
 
 <div align="center">
 
@@ -351,7 +355,7 @@ ruff format src/
 
 <div align="center">
 
-### ⭐ 喜歡這個專案？請給個 Star 支持！
+### ⭐ 이 프로젝트가 마음에 드시나요? Star로 응원해 주세요!
 
 ### *Enjoying Kintaiyi? Give us a ⭐ on GitHub!*
 
@@ -363,17 +367,17 @@ ruff format src/
 
 ## 📄 License
 
-本專案採用 [MIT License](LICENSE) 開源協議。
+본 프로젝트는 [MIT License](LICENSE) 오픈소스 라이선스를 따릅니다.
 
 This project is licensed under the [MIT License](LICENSE).
 
 ---
 
-## 🔗 相關專案 Related Projects
+## 🔗 관련 프로젝트 Related Projects
 
-| 專案 Project | 說明 Description | 連結 Link |
+| 프로젝트 Project | 설명 Description | 링크 Link |
 |-------------|-----------------|----------|
-| 🔮 **堅奇門 kinqimen** | Python 奇門遁甲排盤 — Qi Men Dun Jia | [GitHub](https://github.com/kentang2017/kinqimen) |
-| 🎴 **堅六壬 kinliuren** | Python 大六壬排盤 — Da Liu Ren | [GitHub](https://github.com/kentang2017/kinliuren) |
+| 🔮 **堅奇門 kinqimen** | Python 기문둔갑 포국 — Qi Men Dun Jia | [GitHub](https://github.com/kentang2017/kinqimen) |
+| 🎴 **堅六壬 kinliuren** | Python 대육임 포국 — Da Liu Ren | [GitHub](https://github.com/kentang2017/kinliuren) |
 
-> 三式齊備，古法傳承 — *The Three Styles of Chinese divination, all open-sourced.*
+> 삼식 완비, 고법 전승 — *The Three Styles of Chinese divination, all open-sourced.*
